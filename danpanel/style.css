@@ -1,0 +1,632 @@
+body {
+    overflow: hidden;
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/barbershop.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.overlay {
+    z-index: 7;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    top: 60;
+    left: 120;
+    background-color: lightgray;
+    opacity: 1;
+    border: 0;
+    border-radius: 10px;
+    margin: auto;
+    min-height: 25%;
+    width: 80%;
+}
+
+.employeeWrapper input[type=submit]{
+    width: 7vw !important;
+}
+
+.main {
+    background-color: lightgray;
+    opacity: 0.8;
+    width: 50%;
+    margin-top: 20vh;
+    margin-left: 2vw;
+    padding: 3vw;
+    border-radius: 10px;
+}
+
+.main h1 {
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    font: bolder;
+    font-size: 4vh;
+}
+
+.main h3 {
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    font: bolder;
+    font-size: 3vh;
+}
+
+.header h2 {
+    border-bottom: solid green 2px;
+    text-align: center;
+    color: green;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3.5vh;
+    padding: 1vh;
+}
+
+
+/*form,*/
+
+.content-login {
+    position: absolute;
+    top: 15vh;
+    left: 25vw;
+    width: 50%;
+    height: 80%;
+    border: 1px solid #B0C4DE;
+    background: white;
+    border-radius: 10px 10px 10px 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.content-login form {
+    padding-left: 2vw;
+    padding-bottom: 2vh;
+    padding-top: 1vh;
+    padding-right: 2vw;
+}
+
+.input-group-login {
+    margin: 10px 0px 10px 0px;
+}
+
+.content {
+    width: 50%;
+    height: 80%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: auto;
+    background: white;
+    border: solid lightblue 1px;
+    border-radius: 10px 10px 10px 10px;
+    z-index: 3;
+    margin-top: 7vh;
+}
+
+.content form {
+    text-align: center;
+    padding-left: 5vw;
+}
+.content form select{
+  margin-right: 2vw;
+}
+
+.input-group {
+    margin: 10px 0px 10px 0px;
+    width: 80%;
+}
+
+.input-group label,
+.input-group-login label {
+    display: block;
+    text-align: left;
+    margin: 3px;
+    font-size: 2.6vh;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.input-group input,
+.input-group-login input {
+    height: 4vh;
+    width: 93%;
+    padding: 5px 10px;
+    font-size: 2vh;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#user_type {
+    height: 4vh;
+    width: 96%;
+    padding: 5px 10px;
+    background: white;
+    font-size: 2vh;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+input,
+select {
+    text-align: center;
+    border-radius: 5px;
+    border: gainsboro 1px solid;
+    box-shadow: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.btn-success,
+.btn-warning,
+.btn-danger,
+.btn-primary {
+    font-family: 'Ubuntu', sans-serif;
+}
+.btn-success{
+    background-color: #00b400 !important;
+}
+.btn-primary {
+    background-color: #00abe2 !important;
+    border: none !important;
+}
+
+
+
+
+.logud {
+    margin-right: 2vw;
+}
+
+.error {
+    position: relative;
+    width: 50%;
+
+    min-height: 10vh;
+    margin: auto;
+    padding: 1vw;
+    border: 1px solid #a94442;
+    color: #a94442;
+    background: #f2dede;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1vw;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 1vh;
+}
+
+.success {
+    width: 50%;
+    color: #3c763d;
+    background: #dff0d8;
+    border: 1px solid #3c763d;
+    margin-bottom: 2vh;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header h3 {
+    position: absolute;
+    top: 1vh;
+    left: 15vw;
+    font: 1.5vw bold;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-size: 3vh;
+}
+
+footer {
+    height: 20vh;
+    background-size: contain;
+    background-position: center;
+    background-color: darkgrey;
+    bottom: 0vh;
+    width: 101%;
+    border: 0;
+    z-index: 10;
+    text-align: center;
+}
+
+footer h4 {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3vw;
+}
+
+footer p {
+    color: whitesmoke;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1vw;
+}
+
+.wrapper {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1vw;
+    margin-bottom: 1vh;
+    margin-top: 2vh;
+}
+
+.wrapper h3 {
+    font-size: 1.5vw;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.wrapper .index {
+    padding-left: 4vw;
+    padding-top: 5vh;
+}
+
+.indhold {
+    text-align: center;
+}
+
+.indhold .round{
+    text-align: center;
+    font-size: 10vh;
+}
+
+
+.index img {
+    width: 3vw;
+}
+
+.titel {
+    margin-bottom: 1vh;
+    padding-bottom: 2vh;
+    padding-left: 2vw;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.tekst {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 10vh;
+}
+
+.con {
+    border-bottom: solid green 1px;
+    margin-top: 0;
+    height: 8vh;
+    width: 100vw;
+    justify-content: flex-start;
+    padding-left: 4vw;
+    background-color: darkgrey;
+}
+
+.con2 {
+    border-bottom: solid green 1px;
+    padding: 0;
+    margin-top: 5vh;
+    height: 7vh;
+    justify-content: flex-end;
+    padding-right: 6vw;
+}
+
+.con h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5vh;
+}
+
+/* kundetjek filen */
+
+.container {
+    border-radius: 10px 10px 10px 10px;
+    background-color: whitesmoke;
+    border: solid 1px lightgray;
+    overflow: hidden;
+    position: relative;
+    height: 75vh;
+    width: 60%;
+}
+  .container h1{
+    font-size: 3vh;
+    margin: auto;
+    margin-top: 2vh;
+}
+
+table {
+    text-align: center;
+    width: 100%;
+    margin-right: 5vw;
+    margin-top: 1.4vh;
+    margin-bottom: 1.4vh;
+    font-size: 2vh;
+}
+
+
+.gammel{
+    color: grey;
+    text-decoration: line-through;
+}
+
+.index {
+    text-align: center;
+    align-items: center;
+    border-bottom: solid green 1px;
+}
+.tabel {
+    border-bottom: #00abe2 dashed 1px;
+    width: 100%;
+    text-align: center;
+    padding: 3vw;
+    overflow: hidden;
+}
+
+/* tjek filen */
+.resultat {
+    border-bottom: black solid 1px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    border-bottom: solid lightgray 1px;
+    width: 100%;
+}
+.resultat form {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    margin: auto;
+    width: 100%;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+.resultat .round {
+  grid-column: 2/3;
+  text-align: left;
+  margin-left: 2vw;
+}
+.resultat .btn {
+  margin: auto;
+}
+
+.resultat .submit-buttons{
+    grid-column: 2/3;
+    margin-top: 1vh;
+    text-align: center;
+}
+
+.tjek {
+    height: 100%;
+    margin-top: 1vh;
+    font-family: 'Ubuntu', sans-serif;
+    margin: auto;
+    overflow-y: scroll;
+}
+.opdater {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    height: 100%;
+}
+.opdater form {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    padding: 5vw;
+}
+.datoer {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+.opdater label {
+  text-align: center;
+}
+.opdater input[type=text] {
+  text-align: center;
+  margin: auto;
+
+}
+.datoer .row{
+  width: 100%;
+  grid-column: 2/3;
+}
+
+.datoer select {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 1vh;
+    font-weight: bold;
+}
+
+.firstChoice {
+    font-weight: bold;
+    background-color: lightgray;
+}
+
+.admin_tjek_box,
+.kunde_tjek_box,
+.login_tjek_box {
+    padding-top: 5vh;
+    text-align: center;
+    width: auto;
+    height: auto;
+    background-color: gainsboro;
+    font-size: 2vh;
+}
+
+
+.round h3{
+  margin-top: 10vh;
+}
+
+.salon{
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+.salons{
+  height: 70%;
+  padding: 1vw;
+  overflow-y: scroll;
+}
+.salons img{
+  width: 5vw;
+  height: 10vh;
+}
+.employee{
+  text-align: center;
+  padding: 1vw;
+}
+.employee .btn{
+  text-align: center;
+  font-size: 1.6vh;
+}
+
+
+/* Style er udelukkende for Mixitup funktion*/
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+/* Controls
+---------------------------------------------------------------------- */
+
+.controls {
+    padding: 1rem;
+    border-bottom: solid 1px grey;
+    position: relative;
+    margin: auto;
+    width: 70%;
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
+}
+
+.knap {
+    position: relative;
+    display: inline-block;
+    width: 5vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    cursor: pointer;
+    font-size: 1.5vh;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+    border: solid lightgray 1px;
+    padding: 0.2vw;
+    border-radius: 5px;
+}
+
+.knap.salon {
+    background-color: brown;
+}
+
+.knap.massage {
+    background-color: skyblue;
+}
+
+.knap.skin {
+    background-color: orange;
+}
+
+
+.mixitup-control-active {
+    opacity: 0.6;
+    background-color: whitesmoke;
+}
+
+.mixitup-control-active[data-toggle]:after {
+    opacity: 0.8;
+    background-color: whitesmoke;
+}
+/* Container
+---------------------------------------------------------------------- */
+
+
+.container:after {
+    content: '';
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+/* Target Elements
+---------------------------------------------------------------------- */
+
+
+
+.mix {
+    background-color: whitesmoke;
+    font-family: 'Ubuntu', sans-serif;
+    border: solid gainsboro 1px;
+    height: 60%;
+    padding-top: 1vh;
+}
+
+.mix input[type=text] {
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+.mix p {
+    font-size: 0.8vw;
+    font-weight: bold;
+}
+
+.mix:before {
+    content: '';
+}
+
+.mix.salon {
+    border-top: .5rem solid brown;
+}
+
+.mix.massage {
+    border-top: .5rem solid skyblue;
+}
+
+.mix.skin {
+    border-top: .5rem solid orange;
+}
+/* Grid Breakpoints
+---------------------------------------------------------------------- */
+/* 1 Column */
+
+.mix,
+.gap {
+    width: calc(100%/2 - (((2 - 1) * 1rem) / 2));
+}
+
+
+@media only screen and (max-width: 500px) {
+
+  .content-login {
+      width: 100%;
+      position: relative;
+      margin: auto;
+      left: 0;
+  }
+  .container {
+      width: 100%;
+      height: 100%;
+  }
+  .salons img{
+    width: 6vw;
+    height: 5vh;
+  }
+  .salons .btn{
+    width: 3vw;
+    height: 2vh;
+  }
+  .knap {
+      width: 8vw;
+      margin-left: 2vw;
+      margin-right: 2vw;
+      font-size: 1vh;
+  }
+  .form-group .btn {
+      width: 15vw;
+      text-align: center;
+      font-size: 1.5vh;
+      padding: 0.5vh;
+      margin-bottom: 1vh;
+  }
+
+  .employee .btn {
+    border: solid red 2px !important;
+    padding: 5vh;
+  }
+
+
+}
